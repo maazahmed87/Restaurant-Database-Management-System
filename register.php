@@ -21,7 +21,7 @@
           <input type="text" placeholder="Username">
           <input type="tel" placeholder="Mobile Number">
           <input type="password" placeholder="At least 6 characters">
-          <button type="submit" id="login-button">Sign Up Here</button>
+          <button type="submit" id="login-button">Sign Up</button>
         </form>
       </div>
     </div>
