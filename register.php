@@ -8,20 +8,20 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.css" <title>Account Registration</title>
+  <link rel="stylesheet" href="./css/style.css" <title>Account Registration Page</title>
 </head>
 
 <body>
   <div class="wrapper">
     <div class="container" id="formbord">
-      <h1 id="shadow">Create Account </h1>
+      <h1 id="shadow">Create Account</h1>
       <div class="formbord">
         <form class="form">
           <input type="text" placeholder="Name">
           <input type="text" placeholder="Username">
           <input type="tel" placeholder="Mobile Number">
           <input type="password" placeholder="At least 6 characters">
-          <button type="submit" id="login-button">Sign Up</button>
+          <button type="submit" id="login-button">Sign Up Here</button>
         </form>
       </div>
     </div>
