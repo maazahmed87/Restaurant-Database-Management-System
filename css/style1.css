@@ -89,35 +89,38 @@ input {
     border-radius: 8px;
     transition-duration: 0.25s;
 }
-input:hover{
+
+input:hover {
     background-color: #F0FFFF;
 
 }
+
 form input:focus {
     background-color: white;
     width: 240px;
-    border-radius: 20px!important;
+    border-radius: 20px !important;
     outline: none;
-  }
+}
 
 .landing {
     position: fixed;
     width: 100%;
-    height: 98vh;
+    height: 99vh;
     display: table;
     content: "";
     z-index: -4;
     background-size: cover;
     background-image: url("https://images.unsplash.com/photo-1495195134817-aeb325a55b65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80");
 }
+
 .opac {
     position: fixed;
     width: 100%;
-    height: 98vh;
+    height: 99vh;
     display: table;
     content: "";
     z-index: -4;
-    background-color:rgb(0,0,0,0.2);
+    background-color: rgb(0, 0, 0, 0.2);
 }
 
 .container {
