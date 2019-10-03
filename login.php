@@ -36,7 +36,7 @@
 				}
     }else{
 ?>
-<div class="container" id="container">
+<div data-aos="fade-down" class="container" id="container">
         <div class="form-container sign-in-container">
             <form method="post" action="" name="login">
                 <h1 style="padding-bottom: 20px">Sign in</h1>

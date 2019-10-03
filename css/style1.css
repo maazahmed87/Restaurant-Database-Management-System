@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
+
 * {
     box-sizing: border-box;
 }
@@ -77,6 +78,7 @@ form {
     flex-direction: column;
     padding: 0 50px;
     height: 100%;
+    width: 366px;
     text-align: center;
 }
 
@@ -125,13 +127,12 @@ form input:focus {
 
 .container {
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 15px !important;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
         0 10px 10px rgba(0, 0, 0, 0.22);
     position: relative;
     overflow: hidden;
-    width: 668px;
-    max-width: 100%;
+    width: 366px !important;
     min-height: 420px;
 }
 
@@ -145,7 +146,7 @@ form input:focus {
 
 .sign-in-container {
     left: 0;
-    width: 100% !important;
+    width: 50%;
     z-index: 2;
     transition: all 0.6s ease-in-out;
 }
@@ -154,31 +155,6 @@ form input:focus {
     left: 0;
     width: 100%;
     z-index: 3;
-}
-
-
-
-
-
-
-
-
-
-
-
-.social-container {
-    margin: 20px 0;
-}
-
-.social-container a {
-    border: 1px solid #DDDDDD;
-    border-radius: 50%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 5px;
-    height: 40px;
-    width: 40px;
 }
 
 footer {

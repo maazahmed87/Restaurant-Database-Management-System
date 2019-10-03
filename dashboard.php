@@ -22,8 +22,7 @@ include("auth.php"); //include auth.php file on all secure pages ?>
 
 
 <br /><br /><br /><br />
-<a href="http://www.allphptricks.com/simple-user-registration-login-script-in-php-and-mysqli/">Tutorial Link</a> <br /><br />
-For More Web Development Tutorials Visit: <a href="http://www.allphptricks.com/">AllPHPTricks.com</a>
+
 </div>
 </body>
 </html>
