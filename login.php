@@ -44,7 +44,7 @@
                 <input type="password" name="password" placeholder="Password" required/>
                 <a href="#">Forgot your password?</a>
                 <span style="padding-top: 10px"><button>Login</button></span>
-                <p>Not registered yet? <a href='registration.php'>Register Here</a></p>
+                <p>Not registered yet? <a href='registration.php' style="color:#FF0000;font-weight:bold;">Register Here</a></p>
             </form>
         </div>
 </div>

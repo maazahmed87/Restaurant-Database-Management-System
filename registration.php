@@ -42,7 +42,7 @@
                 <input type="email" name="email" placeholder="Email" required />
 
                 <input type="password" name="password" placeholder="Password" required />
-                <p>Want to login? <a href='login.php'>Login here</a></p>
+                <p style="font-weight:bold">Want to login? <a href='login.php' style="color:#FF0000">Login here</a></p>
                 <span style="padding-top: 10px"><button>Sign Up</button></span>
             </form>
         </div>
