@@ -1,9 +1,3 @@
-<?php
-/*
-Author: Javed Ur Rehman
-Website: http://www.allphptricks.com/
-*/
-?>
 
 <?php
 session_start();

@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&display=swap');
+@import url('//db.onlinewebfonts.com/c/465b1cbe35b5ca0de556720c955abece?family=AbolitionW00-Regular');
+@font-face {font-family: "AbolitionW00-Regular"; src: url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.eot"); src: url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.woff") format("woff"), url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.svg#AbolitionW00-Regular") format("svg"); }
+
+
+@font-face {
+    font-family: 'Sugar Candy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Sugar Candy'), url('../fonts/sugarcandy/Sugar Candy.otf') format('otf');
+}
 
 body {
     overflow-x: hidden;
@@ -15,15 +25,25 @@ body {
     margin-top: -4rem;
 }
 
+.stylish{
+    font-family: 'Sugar Candy';
+    text-align: center;
+    font-size: 100px;
+    font-weight: bolder;
 
+}
 /*--- Navigation--*/
 .navbar {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1rem;
+    font-family: "AbolitionW00-Regular";
+    font-size: 28px!important;
     letter-spacing: .1rem;
-    background: linear-gradient(to left, #001510,#00bf8f)!important;
-    opacity: 0.84;
+    background-color: #010100!important;
+    background-position: top left;
+    background-repeat: repeat;
+    opacity: 0.85;
+    width: 100%;
 }
 
 
@@ -34,7 +54,7 @@ body {
 .navbar-dark .navbar-nav .nav-link {
     color: white;
     padding: 14px 16px;
-    font-size: 14px;
+    font-size: 22px;
     font-weight: 500;
 }
 
@@ -50,7 +70,7 @@ body {
 }
 
 #pop1 {
-    padding-top: 250px;
+    padding-top: 200px;
     padding-left: 50px;
 }
 
@@ -82,7 +102,8 @@ body {
 .canvas-area {
     width: 100%;
     float: left;
-    padding: 5px 4%;
+    padding: 0px 2%;
+    margin-top: 0px;
 }
 
 .head1 {
@@ -153,7 +174,7 @@ padding-left:105px;
 }
 
 .view {
-    padding-left: 228px;
+    padding-left: 206px;
     padding-top: 10px;
 }
 
@@ -203,7 +224,7 @@ padding-left:105px;
     display: table;
     content: "";
     z-index: -1;
-    background-color:rgb(0,0,0,0.4);
+    background-color:rgb(0,0,0,0.8);
 }
 
 .set-img-2 {
