@@ -4,7 +4,8 @@ include("auth.php"); //include auth.php file on all secure pages ?>
 <html lang="en">
 
 <head>
-<link href="//db.onlinewebfonts.com/c/465b1cbe35b5ca0de556720c955abece?family=AbolitionW00-Regular" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/465b1cbe35b5ca0de556720c955abece?family=AbolitionW00-Regular" rel="stylesheet"
+        type="text/css" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -23,7 +24,8 @@ include("auth.php"); //include auth.php file on all secure pages ?>
     <nav class="navbar navbar-expand-md navbar-dark position-sticky-top fixed-top">
         <div class="canvas-area">
             <div class="head1">
-                <a class="navbar-logo" href="#"><img src="img/logo.png" style="height:35px; width: 240px;padding-top:5px"> </a></div>
+                <a class="navbar-logo" href="#"><img src="img/logo.png"
+                        style="height:35px; width: 214px;padding-top:1px"> </a></div>
             <div class="flot">
                 <button class="navbar-toggler" type="button " style="float: right" data-toggle="collapse"
                     data-target="#navbarResponsive">
@@ -46,11 +48,14 @@ include("auth.php"); //include auth.php file on all secure pages ?>
                         <a class="nav-link" href="logout.php">logout</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><p> <?php echo $_SESSION['email']; ?></p></a>
+                        <a class="nav-link" href="#">
+                            <p> <?php echo $_SESSION['email']; ?></p>
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
+
     </nav>
 
     <div class="landing">
@@ -58,100 +63,48 @@ include("auth.php"); //include auth.php file on all secure pages ?>
 
             <div class="container-fluid">
                 <div class="row" id="pop1">
-                    <div class="col-sm-12" id="par1" data-aos=>
-                        <h3 class="stylish" style="color:chartreuse" data-aos=fade-right>First we eat</h3>
-                        <h2 style="color: aliceblue; font-size: 28px " data-aos=fade-up-right>
-                        </h2>
-                        
-
+                    <div class="col-sm-12" id="par1" data-aos=zoom-in>
+                        <h3 class="stylish" style="color:#C6C505" data-aos=fade-right>Great Food</h3>
+                        <a class="ct-btn-scroll ct-js-btn-scroll" href="#section2"><img alt="Arrow Down Icon"
+                                src="https://www.solodev.com/assets/anchor/arrow-down.png"></a>
                     </div>
                 </div>
+
             </div>
+
         </div>
     </div>
 
-    <div class="container">
+
+    <div class="container" style="height:600px" id="about">
         <div class="second">
             <div class="second-head" data-aos=zoom-out>
-                <h1>Welcome to our site</h>
+                <h1 style="font-family:'Sugar Candy';font-size:65px;font-weight:bolder">Our Story</h>
             </div>
-            <div class="second-para" data-aos=zoom-in>
-                <p class="space">
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
-                    professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
-                    consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
-                    literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
-                    of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
-                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-                    Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
-                    their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                </p>
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                alteration in some form, by injected humour, or randomised words which don't look even slightly
-                believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
-                embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat
-                predefined chunks as necessary, making this the first true generator on the Internet. It uses a
-                dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate
-                Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition,
-                injected humour, or non-characteristic words etc.<br>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row" id="row1">
-
-            <div class="col-md-6 col-sm-6 col-xs-12" id="pad1">
-                <div class="food-img1">
-                    <div class="food-1">
-                        <div class="foodwel" data-aos="fade-right">
-                            <div class="foodwelh1">
-                                <div class="heading1">
-                                    delicious food
-                                </div>
-                                <div class="food1-content">
-                                    Amazing food prepared well
-                                </div>
-                                <div class="view">
-                                    <button type="button" class="btn btn-outline-light btn-sm">View more</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-sm-5" id="second-para" data-aos=zoom-in>
+                    <p class="space">
+                        The Euson and Roberts Families have created a unique dining experience in the quaint town of
+                        Bright, Indiana. Our award winning chef brings us a quality, local driven menu aimed to please!
+                        Relax and enjoy a nutritiously fresh meal or a hometown pub favorite in a heart-warming
+                        environment. Bring your family and friends and enjoy life with us!
+                    </p>
                 </div>
-            </div>
-
-            <div class="col-md-6 col-sm-6 col-xs-12" id="pad2">
-                <div class="food-img2">
-                    <div class="food-1">
-                        <div class="foodwel" data-aos="fade-right">
-                            <div class="foodwelh1">
-                                <div class="heading1">
-                                    Excellent quality
-                                </div>
-                                <div class="food1-content">
-                                    Made by the best
-                                </div>
-                                <div class="view">
-                                    <button type="button" class="btn btn-outline-light btn-sm">View more</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-sm-6">
+                    <img src="img/desert.jpg" style="height:50%; width=50%;padding-left:100px;">
                 </div>
             </div>
         </div>
     </div>
+
 
     <!---------- Start Cuisines---------->
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="background:#DCDB1D">
 
 
         <div class="second-head" data-aos=zoom-out>
-            <h1>Wide range of cuisines to choose from</h>
+            <h1 style="font-weight:bolder;font-size:65px">Wide range of cuisines to choose from</h>
         </div>
         <div class="row" id="row2">
 
@@ -220,7 +173,7 @@ include("auth.php"); //include auth.php file on all secure pages ?>
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="background:#DCDB1D">
         <div class="row" id="row2">
 
 
@@ -314,11 +267,22 @@ include("auth.php"); //include auth.php file on all secure pages ?>
             duration: '1200'
         });
     </script>
+    <script>
+        mybutton = document.getElementByClassName("navbar");
 
-    <div class="scroll-bar">
-        <div class="scroll-status"></div>
-    </div>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
 
+        function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 20) {
+                navbar.style.opacity = "0.1";
+            } else {
+                navbar.style.opacity = "0.85";
+            }
+        }
+    </script>
 
 </body>
 
