@@ -47,7 +47,7 @@
 
                 <input type="password" name="password" placeholder="Password" required />
                 <p style="font-weight:bold">Want to login? <a href='login.php' style="color:#FF0000">Login here</a></p>
-                <span style="padding-top: 10px"><button>Sign Up</button></span>
+                <span><button>Sign Up</button></span>
             </form>
         </div>
     </div>

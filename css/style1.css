@@ -12,7 +12,7 @@ body {
     align-items: center;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
-    height: 95vh;
+    height: 99vh;
     margin: -20px 0 50px;
 }
 
@@ -133,7 +133,7 @@ form input:focus {
     position: relative;
     overflow: hidden;
     width: 366px !important;
-    min-height: 420px;
+    min-height: 516px!important;
 }
 
 .form-container {
