@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&display=swap');
 @import url('//db.onlinewebfonts.com/c/465b1cbe35b5ca0de556720c955abece?family=AbolitionW00-Regular');
+@import url('//db.onlinewebfonts.com/c/41f5e8ff1d98d490a19c6d48ea7b74b1?family=Beyond+The+Mountains');
 
 @font-face {
     font-family: "AbolitionW00-Regular";
     src: url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.eot");
     src: url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.woff") format("woff"), url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.svg#AbolitionW00-Regular") format("svg");
 }
+
+
 
 
 @font-face {
@@ -343,12 +346,89 @@ html {
     width: 100%;
 }
 
-#reservation {
-    background-color: #3bb78f;
-    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
-    height: 550px;
-    margin-top: -16px;;
+.chooseres {
+    padding-top: 55px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-family: 'Beyond The Mountains';
+    color: blanchedalmond;
 }
 
+#reservation {
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    height: 545px!important;
+    margin-top: 0px;
+}
 
+#blockres {
+    background-color: white;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    height: 330px;
+    width: 366px;
+    text-align: center;
+    border-radius: 20px;
+}
 
+input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 10px;
+    width: 230px;
+    border-radius: 8px;
+    transition-duration: 0.25s;
+}
+
+input:hover {
+    background-color: #F0FFFF;
+
+}
+
+form input:focus {
+    background-color: #F8F8F8;
+    width: 240px;
+    border-radius: 20px !important;
+    outline: none;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    outline: none;
+}
+
+button:hover {
+    background-color: #1F3855;
+    transition: transform 80ms ease-in;
+    border: 1px solid #1F3855;
+    outline: none;
+}
+
+#timepick+label:after {
+    content: 'Selected time';
+    color: #9d9d9d;
+}
+
+#timepick:valid+label:after {
+    content: 'Select Time';
+    color: #9d9d9d;
+}
+
+#timepick:focus + label:after {
+    content: 'Select time';
+    color: #9d9d9d;
+  }

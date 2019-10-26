@@ -42,7 +42,7 @@ include("auth.php"); //include auth.php file on all secure pages ?>
                         <a class="nav-link" href="#menus">menus</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#reservations">reservation</a>
+                        <a class="nav-link" href="reservation.php">reservation</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="logout.php">logout</a>

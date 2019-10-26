@@ -5,13 +5,14 @@ include("auth.php");
 $status = "";
 if(isset($_POST['new']) && $_POST['new']==1)
 {
-$trn_date = date("Y-m-d H:i:s");
-$name =$_REQUEST['name'];
-$age = $_REQUEST['age'];
-$submittedby = $_SESSION["email"];
-$ins_query="insert into new_record (`trn_date`,`name`,`age`,`submittedby`) values ('$trn_date','$name','$age','$submittedby')";
+$res_date = $_POST['res_date']; // removes backslashes
+$no_of_ppl = $_REQUEST['no_of_ppl'];		
+$res_time = $_REQUEST['res_time'];
+$email = $_SESSION["email"];
+$ins_query="insert into reservation (`res_date`,`no_of_ppl`,`res_time`,`email`,'vip_id') values ('$res_date','$no_of_ppl','$res_time','$email','yes')";
+
 mysqli_query($con,$ins_query) or die(mysql_error());
-$status = "New Record Inserted Successfully.</br></br><a href='view.php'>View Inserted Record</a>";
+$status = "New Record Inserted Successfully.</br></br><a href='registration.php'>View Inserted Record</a>";
 }
 ?>
 <!DOCTYPE html>
@@ -19,8 +20,7 @@ $status = "New Record Inserted Successfully.</br></br><a href='view.php'>View In
 
 <head>
     <meta charset="utf-8">
-    <title>Insert New Record</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Foodilite|Reservation</title>
     <link href="//db.onlinewebfonts.com/c/465b1cbe35b5ca0de556720c955abece?family=AbolitionW00-Regular" rel="stylesheet"
         type="text/css" />
     <meta charset="utf-8">
@@ -28,14 +28,14 @@ $status = "New Record Inserted Successfully.</br></br><a href='view.php'>View In
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fixed.css">
+    <link rel="stylesheet" href="css/button.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Foodilite</title>
 </head>
 
 <body data-aos-easing="ease-out-back" data-aos-duration="1500" data-aos-delay="0">
-<nav class="navbar navbar-expand-md navbar-dark position-sticky-top fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark position-sticky-top fixed-top">
         <div class="canvas-area">
             <div class="head1">
                 <a class="navbar-logo" href="#"><img src="img/logo.png"
@@ -50,7 +50,7 @@ $status = "New Record Inserted Successfully.</br></br><a href='view.php'>View In
             <div class="collapse navbar-collapse text-right" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">about</a>
+                        <a class="nav-link" href="index.php">about</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#menus">menus</a>
@@ -69,25 +69,54 @@ $status = "New Record Inserted Successfully.</br></br><a href='view.php'>View In
                 </ul>
             </div>
         </div>
-
     </nav>
-    <div class="form">
-        <p><a href="dashboard.php">Dashboard</a> | <a href="view.php">View Records</a> | <a href="logout.php">Logout</a>
-        </p>
 
-        <div>
-            <h1>Insert New Record</h1>
-            <form name="form" method="post" action="">
-                <input type="hidden" name="new" value="1" />
-                <p><input type="text" name="name" placeholder="Enter Name" required /></p>
-                <p><input type="text" name="age" placeholder="Enter Age" required /></p>
-                <p><input name="submit" type="submit" value="Submit" /></p>
-            </form>
-            <p style="color:#FF0000;"><?php echo $status; ?></p>
+    <section id="section03" class="demo">
+        <h1 style="font-family:'Sugar Candy';font-weight:bolder;font-size:85px;padding-top:40px;">Make Reservations</h1>
+        <a href="#reservation"><span></span></a>
+    </section>
 
-            <br /><br /><br /><br />
-        </div>
+
+
+
+    <div class="container-fluid" id="reservation">
+        <form method="post" action="" name="reservation">
+            <h1 class="chooseres" style="">Choose your options</h1>
+            <div class="row">
+
+                <div class="col-md-4"></div>
+
+                <div class="col-md-4" id="blockres">
+                    <input type="date" name="res_date" required />
+                    <input type="number" name="no_of_ppl" placeholder="Number of people" style="text-align:center"
+                        required />
+                    <input type="time" name="res_time" style="align-content:center" id="timepick" min="12:00"
+                        max="24:00">
+                    <label for="timepick"></label>
+                    <span style="padding-top: 10px"><button>Book</button></span>
+                </div>
+
+                <div class="col-md-4"></div>
+            </div>
+        </form>
+
+        <p style="color:#FF0000;"><?php echo $status; ?></p>
     </div>
+
+
+
+
+
+    <script>
+        $(function () {
+            $('a[href*=#]').on('click', function (e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $($(this).attr('href')).offset().top
+                }, 500, 'linear');
+            });
+        });
+    </script>
 </body>
 
 </html>
