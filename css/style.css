@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&display=swap');
 @import url('//db.onlinewebfonts.com/c/465b1cbe35b5ca0de556720c955abece?family=AbolitionW00-Regular');
-@font-face {font-family: "AbolitionW00-Regular"; src: url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.eot"); src: url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.woff") format("woff"), url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.svg#AbolitionW00-Regular") format("svg"); }
+
+@font-face {
+    font-family: "AbolitionW00-Regular";
+    src: url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.eot");
+    src: url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.woff") format("woff"), url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.svg#AbolitionW00-Regular") format("svg");
+}
 
 
 @font-face {
@@ -16,7 +21,8 @@ body {
     color: #505962;
 
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -27,31 +33,33 @@ html{
     margin-top: -4rem;
 }
 
-.stylish{
+.stylish {
     font-family: 'Sugar Candy';
     text-align: center;
     font-size: 100px;
     font-weight: bolder;
 
 }
+
 /*--- Navigation--*/
 .navbar {
     text-transform: uppercase;
     font-weight: 700;
     font-family: "AbolitionW00-Regular";
-    font-size: 28px!important;
+    font-size: 28px !important;
     letter-spacing: .1rem;
-    background-color: #010100!important;
+    background-color: #010100 !important;
     background-position: top left;
     background-repeat: repeat;
-    opacity:0.85;
+    opacity: 0.85;
     width: 100%;
 }
 
-.second-head{
-    height: 200px!important;
+.second-head {
+    height: 200px !important;
     font-family: 'Sugar candy';
 }
+
 .navbar-nav li {
     padding-right: .7rem;
 }
@@ -78,8 +86,21 @@ html{
     padding-top: 200px;
     padding-left: 50px;
 }
-.pos-bottom{ position: absolute; bottom: 0; left: 0; right: 0; }
-.pos-top{ position: absolute; top: 0px; left: 0; right: 0;  }
+
+.pos-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.pos-top {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+}
+
 .triangle-up:after {
     content: '';
     height: 10px;
@@ -90,6 +111,7 @@ html{
     background: url(../img/triangle_bg.png) repeat-x;
     background-size: 26px 10px;
 }
+
 .triangle-bottom:after {
     content: '';
     height: 10px;
@@ -99,9 +121,11 @@ html{
     right: 0;
     background: url(../img/triangle_bg.png) repeat-x;
     background-size: 26px 10px;
-    transform: rotate(180deg); -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
 }
-.triangle-bottom{
+
+.triangle-bottom {
     position: relative;
 }
 
@@ -172,35 +196,33 @@ html{
 }
 
 .food-1 {
-    background: rgb(0,0,0,0.6);
+    background: rgb(0, 0, 0, 0.6);
     height: 400px;
     width: 100%
-    
 }
-    
+
 
 #pad1 {
-    padding-left:98px;
+    padding-left: 98px;
 }
 
 .heading1 {
     text-align: center;
     padding-top: 30%;
     text-transform: uppercase;
-    color:#FFC94D;
+    color: #FFC94D;
     font-size: 20px;
     font-weight: 500;
 }
 
 .food1-content {
     text-align: center;
-    color:aliceblue;
+    color: aliceblue;
     padding-top: 8px
-    
 }
 
 .link1 {
-padding-left:105px;
+    padding-left: 105px;
     width: 100%;
     height: 10px;
 }
@@ -211,21 +233,21 @@ padding-left:105px;
 }
 
 #pad2 {
-    padding-right:98px;
+    padding-right: 98px;
 }
 
 
 
 .resp1 {
     background-image: url(https://images.unsplash.com/photo-1542528406-f04308dcf0a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=681&q=80);
-    background-size:cover;
+    background-size: cover;
     width: 100%;
     height: 300px;
 }
 
 #set1 {
-        padding-right: 2.5%;
-        padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
 }
 
 .set-img-1 {
@@ -236,14 +258,14 @@ padding-left:105px;
 }
 
 .set-pic-1 {
-    background: rgb(0,0,0,0.4);
+    background: rgb(0, 0, 0, 0.4);
     width: 100%;
     height: 200px;
 }
 
 #row2 {
     padding-left: 3.5%;
-    padding-bottom:px;
+    padding-bottom: px;
     padding-right: 5%;
 }
 
@@ -256,7 +278,7 @@ padding-left:105px;
     display: table;
     content: "";
     z-index: -1;
-    background-color:rgb(0,0,0,0.6);
+    background-color: rgb(0, 0, 0, 0.6);
 }
 
 .set-img-2 {
@@ -315,25 +337,18 @@ padding-left:105px;
 }
 
 .food-img2 {
-        background-image: url("https://images.unsplash.com/photo-1496412705862-e0088f16f791?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+    background-image: url("https://images.unsplash.com/photo-1496412705862-e0088f16f791?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
     background-size: cover;
     height: 400px;
     width: 100%;
-    
 }
 
-#myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: red;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
-  }
+#reservation {
+    background-color: #3bb78f;
+    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+    height: 550px;
+    margin-top: -16px;;
+}
+
+
+

@@ -37,14 +37,13 @@
 
 
     <div class="container" id="container">
-        <div class="form-container sign-up-container">
+        <div class="">
             <form action="" name="registration" method="post">
                 <h1 style="padding-bottom: 20px">Create Account</h1>
                 <input type="text" name="name" placeholder="Name" required />
                 <input type="email" name="email" placeholder="Email" required />
-                <input type="text" name="address" placeholder="Address" required />
+                <textarea rows="3" col="30" name="address" placeholder="Address" required /></textarea>
                 <input type="text" name="phone" placeholder="Phone Number" required />
-
                 <input type="password" name="password" placeholder="Password" required />
                 <p style="font-weight:bold">Want to login? <a href='login.php' style="color:#FF0000">Login here</a></p>
                 <span><button>Sign Up</button></span>

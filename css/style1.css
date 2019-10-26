@@ -77,7 +77,8 @@ form {
     justify-content: center;
     flex-direction: column;
     padding: 0 50px;
-    height: 100%;
+    min-height: 523px;
+    max-height:530px;
     width: 366px;
     text-align: center;
 }
@@ -103,7 +104,30 @@ form input:focus {
     border-radius: 20px !important;
     outline: none;
 }
+textarea {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 10px;
+    width: 220px;
+    border-radius: 8px;
+    transition-duration: 0.25s;
+    font-family: 'Montserrat', sans-serif;
+}
 
+textarea:hover {
+    background-color: #F0FFFF;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+form textarea:focus {
+    background-color: white;
+    width: 240px;
+    border-radius: 20px !important;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
 .landing {
     position: fixed;
     width: 100%;
@@ -133,7 +157,7 @@ form input:focus {
     position: relative;
     overflow: hidden;
     width: 366px !important;
-    min-height: 516px!important;
+    height: 523px !important;
 }
 
 .form-container {
@@ -181,3 +205,4 @@ footer a {
     color: yellow;
     text-decoration: none;
 }
+
