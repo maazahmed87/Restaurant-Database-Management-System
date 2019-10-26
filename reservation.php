@@ -9,10 +9,11 @@ $res_date = $_POST['res_date']; // removes backslashes
 $no_of_ppl = $_REQUEST['no_of_ppl'];		
 $res_time = $_REQUEST['res_time'];
 $email = $_SESSION["email"];
-$ins_query="insert into reservation (`res_date`,`no_of_ppl`,`res_time`,`email`,'vip_id') values ('$res_date','$no_of_ppl','$res_time','$email','yes')";
+$vip_id=$_REQUEST['vip_id'];
+$ins_query="insert into reservation (`res_date`,`no_of_ppl`,`res_time`,`email`,`vip_id`) values ('$res_date','$no_of_ppl','$res_time','$email','$vip_id')";
 
 mysqli_query($con,$ins_query) or die(mysql_error());
-$status = "New Record Inserted Successfully.</br></br><a href='registration.php'>View Inserted Record</a>";
+$status = "Your reservation has been booked</br>";
 }
 ?>
 <!DOCTYPE html>
@@ -87,6 +88,9 @@ $status = "New Record Inserted Successfully.</br></br><a href='registration.php'
                 <div class="col-md-4"></div>
 
                 <div class="col-md-4" id="blockres">
+
+                    <input type="hidden" name="new" value="1" />
+                    <input type="hidden" name="vip_id" value="1" />
                     <input type="date" name="res_date" required />
                     <input type="number" name="no_of_ppl" placeholder="Number of people" style="text-align:center"
                         required />
@@ -94,13 +98,14 @@ $status = "New Record Inserted Successfully.</br></br><a href='registration.php'
                         max="24:00">
                     <label for="timepick"></label>
                     <span style="padding-top: 10px"><button>Book</button></span>
+
                 </div>
 
                 <div class="col-md-4"></div>
             </div>
-        </form>
 
-        <p style="color:#FF0000;"><?php echo $status; ?></p>
+        </form>
+        <p class="flickr"><?php echo $status; ?></p>
     </div>
 
 
