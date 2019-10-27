@@ -36,10 +36,10 @@ include("auth.php"); //include auth.php file on all secure pages ?>
             <div class="collapse navbar-collapse text-right" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">about</a>
+                        <a class="nav-link" href="index.php">about</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#menus">menus</a>
+                        <a class="nav-link" href="menu.php">menu</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="reservation.php">reservation</a>
