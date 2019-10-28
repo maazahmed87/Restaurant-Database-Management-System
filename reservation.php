@@ -57,13 +57,13 @@ $status = "Your reservation has been booked</br>";
                         <a class="nav-link" href="menu.php">menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#reservations">reservation</a>
+                        <a class="nav-link" href="reservation.php">reservation</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="logout.php">logout</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="user">
                             <p> <?php echo $_SESSION['email']; ?></p>
                         </a>
                     </li>

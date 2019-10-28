@@ -77,7 +77,7 @@ switch($_GET["action"]) {
                         <a class="nav-link" href="index.php">about</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#menu.php">menu</a>
+                        <a class="nav-link" href="menu.php">menu</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="reservation.php">reservation</a>
@@ -86,7 +86,7 @@ switch($_GET["action"]) {
                         <a class="nav-link" href="logout.php">logout</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="user.php">
                             <p> <?php echo $_SESSION['email']; ?></p>
                         </a>
                     </li>
