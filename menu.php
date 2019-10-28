@@ -161,6 +161,7 @@ if(isset($_SESSION["cart_item"])){
                         <td style="text-align:center;"><a
                                 href="menu.php?action=remove&code=<?php echo $item["code"]; ?>"
                                 class="btnRemoveAction"><img src="icon-delete.png" alt="Remove Item" /></a></td>
+                                
                     </tr>
                     <?php
 				$total_quantity += $item["quantity"];

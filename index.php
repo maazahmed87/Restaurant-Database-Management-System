@@ -48,7 +48,7 @@ include("auth.php"); //include auth.php file on all secure pages ?>
                         <a class="nav-link" href="logout.php">logout</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="user.php">
                             <p> <?php echo $_SESSION['email']; ?></p>
                         </a>
                     </li>
