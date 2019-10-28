@@ -54,7 +54,7 @@ $status = "Your reservation has been booked</br>";
                         <a class="nav-link" href="index.php">about</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#menus">menus</a>
+                        <a class="nav-link" href="menu.php">menu</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#reservations">reservation</a>

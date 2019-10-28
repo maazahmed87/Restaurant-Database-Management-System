@@ -1,147 +1,587 @@
 body {
-	font-family: Arial;
-	color: #211a1a;
-	font-size: 0.9em;
-	display: flex;
-	padding-right: 10px;
+    font-family: Arial;
+    color: #211a1a;
+    font-size: 0.9em;
+    display: flex;
+    padding-right: 20px;
 }
 
 .right {
-	width: 100%;
-	height: 500px;
-	min-height: 200px;
-	overflow: auto;
-	position: -webkit-sticky;
-	position: sticky;
-	top: 15%;
-	background-color: #08313A;
-	border: 2px solid #211a1a;
-	border-radius: 20px;
+    width: 56%;
+    height: 500px;
+    min-height: 200px;
+    overflow: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15%;
+    background-color: #E5E526;
+    border: 2px solid #E5E526;
+    border-radius: 20px;
 }
 
 #shopping-cart {
-	margin-top: 20px;
-	margin-right: 10px;
-	margin-left: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 #product-grid {
-	margin-top: 40px;
-	margin-left: 40px;
-	width: 85%;
+    margin-top: 100px;
+    margin-left: 20px;
+    width: 85%;
 }
 
 #shopping-cart table {
-	width: 100%;
-	background-color: #F0F0F0;
+    width: 56%;
+    background-color: #F0F0F0;
 }
 
 #shopping-cart table td {
-	background-color: #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 .txt-heading {
-	color: #5CD85A;
-	border-bottom: 1px solid #E0E0E0;
-	overflow: auto;
-	text-transform: capitalize;
-	font-size: 30px;
-	text-align: center;
+    color: black;
+    border-bottom: 1px solid #E0E0E0;
+    overflow: auto;
+    font-family:"AbolitionW00-Regular";
+    text-transform: capitalize;
+    font-size: 40px;
+    text-align: center;
 }
 
 #btnEmpty {
-	background-color: #ffffff;
-	border: #d00000 1px solid;
-	padding: 5px 10px;
-	color: #d00000;
-	float: right;
-	text-decoration: none;
-	border-radius: 3px;
-	margin: 10px 0px;
+    background-color: #ffffff;
+    border: #d00000 1px solid;
+    padding: 5px 10px;
+    color: #d00000;
+    float: right;
+    text-decoration: none;
+    border-radius: 3px;
+    margin: 10px 0px;
 }
 
 .btnAddAction {
-	padding: 5px 10px;
-	margin-left: 5px;
-	background-color: #efefef;
-	border: #E0E0E0 1px solid;
-	color: #211a1a;
-	float: right;
-	text-decoration: none;
-	border-radius: 3px;
-	cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 5px;
+    background-color: #efefef;
+    border: #E0E0E0 1px solid;
+    color: #211a1a;
+    float: right;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 #product-grid .txt-heading {
-	margin-bottom: 18px;
+    margin-bottom: 18px;
 }
 
 .product-item {
-	float: left;
-	background: #ffffff;
-	margin: 30px 30px 0px 0px;
-	border: #E0E0E0 1px solid;
+    float: left;
+    background: #ffffff;
+    margin: 30px 20px 0px 0px;
+    border: none;
+    width: 85%;
 }
 
 .product-image {
-	height: 155px;
-	width: 250px;
-	background-color: #FFF;
+    background-color: #FFF;
+    width: 230px;
+    height: 185px;
+    float: left;
 }
 
 .clear-float {
-	clear: both;
+    clear: both;
 }
 
 .demo-input-box {
-	border-radius: 2px;
-	border: #CCC 1px solid;
-	padding: 2px 1px;
+    border-radius: 2px;
+    border: #CCC 1px solid;
+    padding: 2px 1px;
 }
 
 .tbl-cart {
-	font-size: 0.9em;
+    font-size: 0.9em;
 }
 
 .tbl-cart th {
-	font-weight: normal;
+    font-weight: normal;
 }
 
 .product-title {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size:24px;
+    font-family: "Beyond the mountains"
+}
+
+.product-description {
+    color: #505962;
+    font-size: 14px;
 }
 
 .product-price {
-	float: left;
+    float: right;
+    margin-left: 30px;
+    margin-top:-20px;
+    font-size:30px;
+    font-family:'Beyond the mountains';
+    font-weight: bolder;
+}
+
+.lower {
+    margin-top: 30px !important;
+    align-items: center !important;
+    margin-right: 30px;
+    float:left
 }
 
 .cart-action {
-	float: right;
+    font-family:'AbolitionW00-Regular';
+    font-size: 12px;
 }
 
 .product-quantity {
-	padding: 5px 10px;
-	border-radius: 3px;
-	border: #E0E0E0 1px solid;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: #E0E0E0 1px solid;
 }
 
 .product-tile-footer {
-	padding: 15px 15px 0px 15px;
-	overflow: auto;
+    padding: 15px 15px 0px 0px;
+    overflow: auto;
 }
 
+
 .cart-item-image {
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	border: #E0E0E0 1px solid;
-	padding: 5px;
-	vertical-align: middle;
-	margin-right: 15px;
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    border: #E0E0E0 1px solid;
+    padding: 5px;
+    margin-right: 5px;
+    vertical-align: middle;
+    margin-right: 15px;
 }
 
 .no-records {
-	text-align: center;
-	clear: both;
-	margin: 38px 0px;
+    text-align: center;
+    clear: both;
+    margin: 38px 0px;
+}
+
+
+input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 10px;
+    width: 230px;
+    border-radius: 8px;
+    transition-duration: 0.25s;
+    text-align: center;
+}
+
+input:hover {
+    background-color: #E5E527;
+
+}
+
+form input:focus {
+    outline: none;
+}
+
+.fix1 {
+    width: 100px;
+}
+
+.fix2 {
+    width: 40px;
+}
+
+.fix1:focus {
+    width: 100px !important;
+}
+
+.fix2:focus {
+    width: 40px !important;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&display=swap');
+@import url('//db.onlinewebfonts.com/c/465b1cbe35b5ca0de556720c955abece?family=AbolitionW00-Regular');
+@import url('//db.onlinewebfonts.com/c/41f5e8ff1d98d490a19c6d48ea7b74b1?family=Beyond+The+Mountains');
+
+@font-face {
+    font-family: "AbolitionW00-Regular";
+    src: url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.eot");
+    src: url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.woff") format("woff"), url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/465b1cbe35b5ca0de556720c955abece.svg#AbolitionW00-Regular") format("svg");
+}
+
+
+
+
+@font-face {
+    font-family: 'Sugar Candy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Sugar Candy'), url('../fonts/sugarcandy/Sugar Candy.otf') format('otf');
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Rubik', sans-serif;
+    color: #505962;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.offset:before {
+    display: block;
+    content: "";
+    height: 4rem;
+    margin-top: -4rem;
+}
+
+.stylish {
+    font-family: 'Sugar Candy';
+    text-align: center;
+    font-size: 100px;
+    font-weight: bolder;
+
+}
+
+/*--- Navigation--*/
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "AbolitionW00-Regular";
+    font-size: 28px !important;
+    letter-spacing: .1rem;
+    background-color: #010100 !important;
+    background-position: top left;
+    background-repeat: repeat;
+    opacity: 1;
+    width: 100%;
+}
+
+.second-head {
+    height: 200px !important;
+    font-family: 'Sugar candy';
+}
+
+.navbar-nav li {
+    padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white!important;
+    padding: 7px 12px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #E5E526!important;
+}
+
+
+#io {
+    text-align: justify;
+    color: aliceblue;
+}
+
+#pop1 {
+    padding-top: 200px;
+    padding-left: 50px;
+}
+
+.pos-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.pos-top {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+}
+
+.triangle-up:after {
+    content: '';
+    height: 10px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background: url(../img/triangle_bg.png) repeat-x;
+    background-size: 26px 10px;
+}
+
+.triangle-bottom:after {
+    content: '';
+    height: 10px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    background: url(../img/triangle_bg.png) repeat-x;
+    background-size: 26px 10px;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+.triangle-bottom {
+    position: relative;
+}
+
+.second-head {
+    font-size: 5rem;
+    text-align: center;
+    font-weight: 700;
+    color: black;
+    padding: 60px 0px 40px 0px;
+    margin-top: 0px;
+}
+
+#second-para {
+    text-align: justify;
+    word-spacing: 3px;
+    line-height: 24px;
+    padding-top: 80px;
+    font-weight: 400;
+    padding-bottom: 50px;
+    text-indent: 30px;
+    margin: 0px;
+
+}
+
+.space {
+    padding-bottom: 10px;
+}
+
+.canvas-area {
+    width: 100%;
+    float: left;
+    padding: 0px 2%;
+    margin-top: 0px;
+}
+
+.head1 {
+    width: auto;
+    float: left;
+
+}
+
+.head1 a {
+    width: auto;
+    float: left;
+}
+
+.head1 a img {
+    width: auto;
+    float: left;
+    height: 40px !important;
+}
+
+@media(max-width:767px) {
+    .ml-auto {
+        width: 100% !important;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        text-align: center;
+    }
+}
+
+.food-img1 {
+    background-image: url("https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+}
+
+.food-1 {
+    background: rgb(0, 0, 0, 0.6);
+    height: 400px;
+    width: 100%
+}
+
+
+#pad1 {
+    padding-left: 98px;
+}
+
+.heading1 {
+    text-align: center;
+    padding-top: 30%;
+    text-transform: uppercase;
+    color: #FFC94D;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.food1-content {
+    text-align: center;
+    color: aliceblue;
+    padding-top: 8px
+}
+
+.link1 {
+    padding-left: 105px;
+    width: 100%;
+    height: 10px;
+}
+
+.view {
+    padding-left: 206px;
+    padding-top: 10px;
+}
+
+#pad2 {
+    padding-right: 98px;
+}
+
+
+
+.resp1 {
+    background-image: url(https://images.unsplash.com/photo-1542528406-f04308dcf0a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=681&q=80);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+#set1 {
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+}
+
+.set-img-1 {
+    background-image: url(https://images.unsplash.com/photo-1542528406-f04308dcf0a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=681&q=80);
+    width: 115%;
+    height: 200px;
+    background-size: cover;
+}
+
+.set-pic-1 {
+    background: rgb(0, 0, 0, 0.4);
+    width: 100%;
+    height: 200px;
+}
+
+#row2 {
+    padding-left: 3.5%;
+    padding-bottom: px;
+    padding-right: 5%;
+}
+
+
+
+.opac {
+    position: relative;
+    width: 100%;
+    height: inherit;
+    display: table;
+    content: "";
+    z-index: -1;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.set-img-2 {
+    background-image: url(https://images.unsplash.com/photo-1542282811-943ef1a977c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80);
+    width: 115%;
+    height: 200px;
+    background-size: cover;
+}
+
+.set-img-3 {
+    background-image: url(https://images.unsplash.com/photo-1503764654157-72d979d9af2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=753&q=80);
+    width: 115%;
+    height: 200px;
+    background-size: cover;
+}
+
+.set-img-4 {
+    background-image: url(https://images.unsplash.com/photo-1548592806-482f9b023d51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=891&q=80);
+    width: 115%;
+    height: 200px;
+    background-size: cover;
+    align-content: center;
+}
+
+.set-img-5 {
+    background-image: url(https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=387&q=80);
+    width: 115%;
+    height: 200px;
+    background-size: cover;
+    align-content: center;
+}
+
+.set-img-6 {
+    background-image: url(https://images.unsplash.com/photo-1514518189759-94d8ee01ecf1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+    width: 115%;
+    height: 200px;
+    background-size: cover;
+    align-content: center;
+}
+
+.set-img-7 {
+    background-image: url(https://images.unsplash.com/photo-1501688190156-9e816757373a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+    width: 115%;
+    height: 200px;
+    background-size: cover;
+    align-content: center;
+}
+
+
+.set-img-8 {
+    background-image: url(https://images.unsplash.com/photo-1515931215890-366d3990cf8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+    width: 115%;
+    height: 200px;
+    background-size: cover;
+    align-content: center;
+}
+
+.food-img2 {
+    background-image: url("https://images.unsplash.com/photo-1496412705862-e0088f16f791?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+
+.chooseres {
+    padding-top: 55px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-family: 'Beyond The Mountains';
+    color: blanchedalmond;
+}
+
+#reservation {
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    height: 545px !important;
+    margin-top: 0px;
+}
+
+#blockres {
+    background-color: white;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    height: 330px;
+    width: 366px;
+    text-align: center;
+    border-radius: 20px;
 }
