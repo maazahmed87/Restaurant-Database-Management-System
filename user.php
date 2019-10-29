@@ -1,6 +1,8 @@
 <?php 
 require('db.php');
 include("auth.php");
+$email=$_SESSION['email'];
+
 ?>
 
 <!DOCTYPE html>
@@ -51,7 +53,12 @@ include("auth.php");
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="user">
-                            <p> <?php echo $_SESSION['email']; ?></p>
+                            <p><?php
+            $query1="select name from customer where email='$email'";
+            $nameg = mysqli_query($con,$query1);
+            while ($row = mysqli_fetch_assoc($nameg)) {
+                echo $row['name']."<br>";
+            }?></p>
                         </a>
                     </li>
                 </ul>
@@ -61,12 +68,26 @@ include("auth.php");
 
     <div class="container-fluid">
         <div class="col-md-12">
-            <p style="font-family: 'Beyond the mountains';color:black;margin-top:100px;text-align:center;font-size:40px">Welcome <?php echo $_SESSION['email']; ?></p>
+            <p style="font-family: 'Beyond the mountains';text-transform:capitalize;color:black;margin-top:100px;text-align:center;font-size:40px">Welcome <?php
+            $query1="select name from customer where email='$email'";
+            $nameg = mysqli_query($con,$query1);
+            while ($row = mysqli_fetch_assoc($nameg)) {
+                echo $row['name']."<br>";
+            }?></p>
         </div>
     </div>
-
-    <p>Your past orders</p>
-    <table width="90%" border="1" style="text-align:center;border-collapse:collapse;margin-top:10px;margin-left:30px;margin-right:30px!important">
+    <hr>
+    <div style="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+        <p style="font-family:'AbolitionW00-Regular';font-size:30px;text-align:center;">Your past orders</p>
+        </div>
+        <div class="col-md-6">
+        <p style="font-family:'AbolitionW00-Regular';font-size:30px;text-align:center;">Your upcoming reservations</p>
+        </div>
+    
+    </div>
+    <table align="left" width="45%" border="1" style="text-align:center;align:center!important;border-collapse:collapse;margin-top:10px;margin-left:30px;margin-right:30px!important">
         <thead>
             <tr>
                 <th><strong>S.No</strong></th>
@@ -92,6 +113,37 @@ while($row = mysqli_fetch_assoc($result)) { ?>
                 <td align="center"><?php echo $row["quantity"]; ?></td>
                 <td align="center"><?php echo $row["ord_date"]; ?></td>
                 <td align="center"><?php echo $row["oprice"]; ?></td>
+            </tr>
+            <?php $count++; } ?>
+        </tbody>
+    </table>
+
+
+    <table align="right" width="45%" border="1" style="text-align:center;border-collapse:collapse;margin-top:10px;margin-left:30px;margin-right:30px!important">
+        <thead>
+            <tr>
+                <th><strong>S.No</strong></th>
+                <th><strong>Reservaiton Date</strong></th>
+                <th><strong>Reservation time</strong></th>
+                <th><strong>Number of guests</strong></th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+$count=1;
+$email = $_SESSION["email"];
+$g1="Select r.res_date,r.res_time,r.no_of_ppl
+    from reservation r
+    where r.email='$email'";
+$res2 = mysqli_query($con,$g1);
+while($row = mysqli_fetch_assoc($res2)) { ?>
+            <tr>
+                <td align="center"><?php echo $count; ?></td>
+                <td align="center"><?php echo $row["res_date"]; ?></td>
+                <td align="center"><?php echo $row["res_time"]; ?></td>
+                <td align="center"><?php echo $row["no_of_ppl"]; ?></td>
+                 </td>
             </tr>
             <?php $count++; } ?>
         </tbody>
