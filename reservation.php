@@ -64,7 +64,7 @@ $status = "Your reservation has been booked</br>";
                         <a class="nav-link" href="logout.php">logout</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="user">
+                        <a class="nav-link" href="user.php">
                             <p><?php
             $query1="select name from customer where email='$email'";
             $nameg = mysqli_query($con,$query1);
