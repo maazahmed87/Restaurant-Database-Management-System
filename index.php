@@ -1,5 +1,7 @@
 <?php
-include("auth.php"); //include auth.php file on all secure pages ?>
+require("db.php");
+include("auth.php");
+$email=$_SESSION['email']; //include auth.php file on all secure pages ?>
 <!doctype html>
 <html lang="en">
 
@@ -49,7 +51,12 @@ include("auth.php"); //include auth.php file on all secure pages ?>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="user.php">
-                            <p> <?php echo $_SESSION['email']; ?></p>
+                            <p><?php
+            $query1="select name from customer where email='$email'";
+            $nameg = mysqli_query($con,$query1);
+            while ($row = mysqli_fetch_assoc($nameg)) {
+                echo $row['name']."<br>";
+            }?></p>
                         </a>
                     </li>
                 </ul>

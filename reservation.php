@@ -1,6 +1,7 @@
 <?php 
 require('db.php');
 include("auth.php");
+$email=$_SESSION['email'];
 
 $status = "";
 if(isset($_POST['new']) && $_POST['new']==1)
@@ -64,7 +65,12 @@ $status = "Your reservation has been booked</br>";
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="user">
-                            <p> <?php echo $_SESSION['email']; ?></p>
+                            <p><?php
+            $query1="select name from customer where email='$email'";
+            $nameg = mysqli_query($con,$query1);
+            while ($row = mysqli_fetch_assoc($nameg)) {
+                echo $row['name']."<br>";
+            }?></p>
                         </a>
                     </li>
                 </ul>
