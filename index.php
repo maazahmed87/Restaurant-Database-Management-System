@@ -14,6 +14,7 @@ $email=$_SESSION['email']; //include auth.php file on all secure pages ?>
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fixed.css">
+    <link rel="stylesheet" href="css/button.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Foodilite</title>
@@ -65,22 +66,10 @@ $email=$_SESSION['email']; //include auth.php file on all secure pages ?>
 
     </nav>
 
-    <div class="landing">
-        <div class="opac">
-
-            <div class="container-fluid">
-                <div class="row" id="pop1">
-                    <div class="col-sm-12" id="par1" data-aos=zoom-in>
-                        <h3 class="stylish" style="color:#C6C505" data-aos=fade-right>Great Food</h3>
-                        <a class="ct-btn-scroll ct-js-btn-scroll" href="#section2"><img alt="Arrow Down Icon"
-                                src="https://www.solodev.com/assets/anchor/arrow-down.png"></a>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
+    <section id="section05" class="demo">
+        <h1 style="font-family:'Beyond the mountains';font-weight:normal;font-size:85px;padding-top:40px;text-shadow: 2px 2px #FF0000;">Great food always</h1>
+        <a href="#about"><span></span></a>
+    </section>
 
 
     <div class="container" style="height:600px" id="about">
