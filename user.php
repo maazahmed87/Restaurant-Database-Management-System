@@ -123,7 +123,7 @@ while($row = mysqli_fetch_assoc($result)) { ?>
         <thead>
             <tr>
                 <th><strong>S.No</strong></th>
-                <th><strong>Reservaiton Date</strong></th>
+                <th><strong>Reservation Date</strong></th>
                 <th><strong>Reservation time</strong></th>
                 <th><strong>Number of guests</strong></th>
                 

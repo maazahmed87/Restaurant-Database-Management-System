@@ -49,7 +49,7 @@ switch($_GET["action"]) {
 <html lang="en">
 
 <head>
-    <TITLE>Simple PHP Shopping Cart</TITLE>
+    <TITLE>Menu</TITLE>
     <link rel="stylesheet" href="css/shop.css" type="text/css" />
     <link href="//db.onlinewebfonts.com/c/465b1cbe35b5ca0de556720c955abece?family=AbolitionW00-Regular" rel="stylesheet"
         type="text/css" />

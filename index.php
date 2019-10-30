@@ -75,7 +75,7 @@ $email=$_SESSION['email']; //include auth.php file on all secure pages ?>
     <div class="container" style="height:600px" id="about">
         <div class="second">
             <div class="second-head" data-aos=zoom-out>
-                <h1 style="font-family:'Sugar Candy';font-size:65px;font-weight:bolder">Our Story</h>
+                <h1 style="font-family:'Beyond the mountains';font-size:65px;font-weight:bolder">Our Story</h>
             </div>
             <div class="row">
                 <div class="col-sm-5" id="second-para" data-aos=zoom-in>
@@ -100,7 +100,7 @@ $email=$_SESSION['email']; //include auth.php file on all secure pages ?>
 
 
         <div class="second-head" data-aos=zoom-out>
-            <h1 style="font-weight:bolder;font-size:65px">Wide range of cuisines to choose from</h>
+            <h1 style="font-weight:bolder;font-family:'beyond the mountains';font-size:65px">Wide range of cuisines to choose from</h>
         </div>
         <div class="row" id="row2">
 
