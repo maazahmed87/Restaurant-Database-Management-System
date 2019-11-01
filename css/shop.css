@@ -14,8 +14,9 @@ body {
     position: -webkit-sticky;
     position: sticky;
     top: 15%;
-    background-color: #E5E526;
-    border: 2px solid #E5E526;
+    background-color: #f9d29d;
+    background-image: linear-gradient(315deg, #f9d29d 0%, #ffd8cb 74%);
+    border: 2px solid white;
     border-radius: 20px;
 }
 
@@ -44,7 +45,7 @@ body {
     color: black;
     border-bottom: 1px solid #E0E0E0;
     overflow: auto;
-    font-family:"AbolitionW00-Regular";
+    font-family: "AbolitionW00-Regular";
     text-transform: capitalize;
     font-size: 40px;
     text-align: center;
@@ -59,6 +60,18 @@ body {
     text-decoration: none;
     border-radius: 3px;
     margin: 10px 0px;
+}
+
+#btnorder {
+    background-color: #1ECF13;
+    border: #1ECF13 1px solid;
+    padding: 5px 10px;
+    color: white;
+    float: right;
+    text-decoration: none;
+    border-radius: 3px;
+    margin: 10px 0px;
+    margin-right: 200px;
 }
 
 .btnAddAction {
@@ -113,7 +126,7 @@ body {
 .product-title {
     margin-bottom: 20px;
     font-weight: bolder;
-    font-size:24px;
+    font-size: 24px;
     font-family: "Beyond the mountains"
 }
 
@@ -125,9 +138,9 @@ body {
 .product-price {
     float: right;
     margin-left: 30px;
-    margin-top:-20px;
-    font-size:30px;
-    font-family:'Beyond the mountains';
+    margin-top: -20px;
+    font-size: 30px;
+    font-family: 'Beyond the mountains';
     font-weight: bolder;
 }
 
@@ -135,11 +148,11 @@ body {
     margin-top: 30px !important;
     align-items: center !important;
     margin-right: 30px;
-    float:left
+    float: left
 }
 
 .cart-action {
-    font-family:'AbolitionW00-Regular';
+    font-family: 'AbolitionW00-Regular';
     font-size: 12px;
 }
 
@@ -279,7 +292,7 @@ html {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: white!important;
+    color: white !important;
     padding: 7px 12px;
     font-size: 20px;
     font-weight: 500;
@@ -287,7 +300,7 @@ html {
 
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #E5E526!important;
+    color: #E5E526 !important;
 }
 
 
