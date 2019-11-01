@@ -3,7 +3,7 @@ class DBController {
 	private $host = "localhost";
 	private $user = "root";
 	private $password = "";
-	private $database = "food";
+	private $database = "main";
 	private $conn;
 	
 	function __construct() {
@@ -22,6 +22,12 @@ class DBController {
 		}		
 		if(!empty($resultset))
 			return $resultset;
+	}
+	function insq($query)
+	{
+		mysqli_query($this->conn,$query);
+		$done = "Your order has been placed</br>";
+		return $done;
 	}
 	
 	function numRows($query) {
