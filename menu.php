@@ -36,7 +36,7 @@ switch($_GET["action"]) {
                     $quantity1=$_SESSION["cart_item"][$k]["quantity"];
                     $code1=$_SESSION["cart_item"][$k]["code"];
                     $email1=$_SESSION["email"];
-                    $total=$_SESSION["cart_item"][$k]["price"];
+                    $total=($_SESSION["cart_item"][$k]["price"])*($_SESSION["cart_item"][$k]["quantity"]);
                     $ord_date1=date("Y-m-d");
                     $ord_time1=date('H:i');
                     $db_handle->insq("insert into orders (`email`,`ord_date`,`code`,`quantity`,`ord_time`,`total`) values ('$email1','$ord_date1','$code1','$quantity1','$ord_time1','$total')");    
