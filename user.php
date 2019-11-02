@@ -94,6 +94,7 @@ $email=$_SESSION['email'];
                 <th><strong>Item name</strong></th>
                 <th><strong>Quantity</strong></th>
                 <th><strong>Date</strong></th>
+                <th><strong>Time</strong></th>
                 <th><strong>Total</strong></th>
             </tr>
         </thead>
@@ -101,9 +102,9 @@ $email=$_SESSION['email'];
             <?php
 $count=1;
 $email = $_SESSION["email"];
-$sel_query="Select m.name,i.quantity,c.ord_date,c.email,c.oprice
-    from orders1 c, ord_item i, menu m
-    where c.ord_id=i.ord_id and m.id=i.id
+$sel_query="Select m.name,c.quantity,c.ord_date,c.ord_time,c.email,c.total
+    from orders c, menu m
+    where c.code=m.code
     and c.email='$email'";
 $result = mysqli_query($con,$sel_query);
 while($row = mysqli_fetch_assoc($result)) { ?>
@@ -112,7 +113,8 @@ while($row = mysqli_fetch_assoc($result)) { ?>
                 <td align="center"><?php echo $row["name"]; ?></td>
                 <td align="center"><?php echo $row["quantity"]; ?></td>
                 <td align="center"><?php echo $row["ord_date"]; ?></td>
-                <td align="center"><?php echo $row["oprice"]; ?></td>
+                <td align="center"><?php echo $row["ord_time"]; ?></td>
+                <td align="center"><?php echo $row["total"]; ?></td>
             </tr>
             <?php $count++; } ?>
         </tbody>
