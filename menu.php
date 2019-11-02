@@ -72,6 +72,7 @@ switch($_GET["action"]) {
     <link href="//db.onlinewebfonts.com/c/465b1cbe35b5ca0de556720c955abece?family=AbolitionW00-Regular" rel="stylesheet"
         type="text/css" />
     <meta charset="utf-8">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -126,7 +127,7 @@ switch($_GET["action"]) {
 	if (!empty($product_array)) { 
 		foreach($product_array as $key=>$value){
 	?>
-        <div class="product-item">
+        <div class="product-item foo-2">
             <form method="post" action="menu.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
                 <div class="product-image"><img
                         style="height:155px;margin-left:15px;margin-top:10px;border-radius:80px;display:flex;width:160px;background-size:cover;background-position:center center;position:relative;background-repeat:no-repeat;"
@@ -218,5 +219,30 @@ if(isset($_SESSION["cart_item"])){
         </div>
     </div>
 </BODY>
+<script>
+    // GENERAL SETTING
+window.sr = ScrollReveal({ reset: true });
+
+// Custom Settings
+sr.reveal('.foo-1', { duration: 200 });
+
+sr.reveal('.foo-2', { 
+  origin: 'right', 
+  duration: 500 
+});
+
+sr.reveal('.foo-3', { 
+  rotate: { x: 100, y: 100, z: 0 },
+  duration: 1000
+});
+
+sr.reveal('.foo-4', { 
+  viewFactor: 0.3
+});
+
+sr.reveal('.foo-5', { 
+  duration: 200 
+});
+</script>
 
 </HTML>

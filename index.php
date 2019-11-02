@@ -67,7 +67,9 @@ $email=$_SESSION['email']; //include auth.php file on all secure pages ?>
     </nav>
 
     <section id="section05" class="demo">
-        <h1 style="font-family:'Beyond the mountains';font-weight:normal;font-size:85px;padding-top:40px;text-shadow: 2px 2px #FF0000;">Great food always</h1>
+        <h1
+            style="font-family:'Beyond the mountains';font-weight:normal;font-size:85px;padding-top:40px;text-shadow: 2px 2px #FF0000;">
+            <span class="tagline">Great food</span><span class="punchline"> Always</span></h1>
         <a href="#about"><span></span></a>
     </section>
 
@@ -87,7 +89,7 @@ $email=$_SESSION['email']; //include auth.php file on all secure pages ?>
                     </p>
                 </div>
                 <div class="col-sm-6">
-                    <img src="img/desert.jpg" style="height:50%; width=50%;padding-left:100px;">
+                    <img src="img/desert.jpg" style="height:45%;padding-left:100px;">
                 </div>
             </div>
         </div>
@@ -100,7 +102,8 @@ $email=$_SESSION['email']; //include auth.php file on all secure pages ?>
 
 
         <div class="second-head" data-aos=zoom-out>
-            <h1 style="font-weight:bolder;font-family:'beyond the mountains';font-size:65px">Wide range of cuisines to choose from</h>
+            <h1 style="font-weight:bolder;font-family:'beyond the mountains';font-size:65px">Wide range of cuisines to
+                choose from</h>
         </div>
         <div class="row" id="row2">
 
@@ -241,6 +244,62 @@ $email=$_SESSION['email']; //include auth.php file on all secure pages ?>
 
 
     <!----------End Cuisines---------->
+    <footer>
+        <div class="footer" id="parallax">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <h4> Brand Name </h4>
+                    </div>
+                    <div class="col-lg-3 col-sm-2 col-xs-3">
+                        <h3> Contact </h3>
+                        <ul>
+                            <li><a class="email" href="#"> insert email here </a></li>
+                            <br />
+                            <li>
+                                <p> address line one </p>
+                            </li>
+                            <li>
+                                <p> address line two </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-2 col-xs-3">
+                        <ul>
+                            <li>
+                                <h5> <a href="#" style="margin-top: 5em"> ABOUT US</a>
+                                    <h5>
+                            </li>
+                            <li>
+                                <h5><a href="#"> CURRENT SERIES </a>
+                                    <h5>
+                            </li>
+                            <li>
+                                <h5><a href="#"> THE HOUSE </a>
+                                    <h5>
+                            </li>
+                            <li>
+                                <h5><a href="#"> LOOKING BACK </a>
+                                    <h5>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--/.row-->
+                </div>
+                <!--/.container-->
+            </div>
+            <!--/.footer-->
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <p class="pull-left copyright"> Copyright © Footer 2014. All right reserved. </p>
+
+                </div>
+            </div>
+            <!--/.footer-bottom-->
+
+    </footer>
 
 
 
@@ -278,6 +337,56 @@ $email=$_SESSION['email']; //include auth.php file on all secure pages ?>
                 navbar.style.opacity = "0.85";
             }
         }
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+        ScrollReveal({
+            duration: 1000
+        })
+    </script>
+
+    <script>
+        ScrollReveal().reveal('.tagline', {
+            delay: 500
+        })
+        ScrollReveal().reveal('.punchline', {
+            delay: 2000
+        })
+    </script>
+
+    <script>
+        // GENERAL SETTING
+        window.sr = ScrollReveal({
+            reset: true
+        });
+
+        // Custom Settings
+        sr.reveal('.foo-1', {
+            duration: 200
+        });
+
+        sr.reveal('.foo-2', {
+            origin: 'right',
+            duration: 500
+        });
+
+        sr.reveal('.foo-3', {
+            rotate: {
+                x: 100,
+                y: 100,
+                z: 0
+            },
+            duration: 1000
+        });
+
+        sr.reveal('.foo-4', {
+            viewFactor: 0.3
+        });
+
+        sr.reveal('.foo-5', {
+            duration: 200
+        });
     </script>
 
 </body>
