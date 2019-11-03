@@ -9,10 +9,12 @@ $email=$_SESSION['email']; //include auth.php file on all secure pages ?>
     <link href="//db.onlinewebfonts.com/c/465b1cbe35b5ca0de556720c955abece?family=AbolitionW00-Regular" rel="stylesheet"
         type="text/css" />
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/linearicons.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="css/fixed.css">
     <link rel="stylesheet" href="css/button.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -23,6 +25,7 @@ $email=$_SESSION['email']; //include auth.php file on all secure pages ?>
 
 
 <body data-aos-easing="ease-out-back" data-aos-duration="1500" data-aos-delay="0">
+    <div class="se-pre-con"></div>
 
     <nav class="navbar navbar-expand-md navbar-dark position-sticky-top fixed-top">
         <div class="canvas-area">
@@ -172,7 +175,7 @@ $email=$_SESSION['email']; //include auth.php file on all secure pages ?>
         </div>
     </div>
 
-    <div class="container-fluid" style="background:#DCDB1D">
+    <div class="container-fluid" style="background:#DCDB1D;padding-bottom:30px;">
         <div class="row" id="row2">
 
 
@@ -244,63 +247,75 @@ $email=$_SESSION['email']; //include auth.php file on all secure pages ?>
 
 
     <!----------End Cuisines---------->
-    <footer>
-        <div class="footer" id="parallax">
+    <footer class="footer-area foo-4">
+        <div class="footer-widget-wrap">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                        <h4> Brand Name </h4>
+                <div class="row section-gap">
+                    <div class="col-lg-4  col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h4>Opening Hours</h4>
+                            <ul class="hr-list">
+                                <li class="d-flex justify-content-between">
+                                    <span>Monday - Friday</span> <span>08.00 am - 10.00 pm</span>
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    <span>Saturday</span> <span>08.00 am - 10.00 pm</span>
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    <span>Sunday</span> <span>08.00 am - 10.00 pm</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-sm-2 col-xs-3">
-                        <h3> Contact </h3>
-                        <ul>
-                            <li><a class="email" href="#"> insert email here </a></li>
-                            <br />
-                            <li>
-                                <p> address line one </p>
-                            </li>
-                            <li>
-                                <p> address line two </p>
-                            </li>
-                        </ul>
+                    <div class="col-lg-4  col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h4>Contact Us</h4>
+                            <p>
+                                56/8, los angeles, rochy beach, Santa monica, United states of america - 1205
+                            </p>
+                            <p class="number">
+                                012-6532-568-9746 <br>
+                                012-6532-569-9748
+                            </p>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-sm-2 col-xs-3">
-                        <ul>
-                            <li>
-                                <h5> <a href="#" style="margin-top: 5em"> ABOUT US</a>
-                                    <h5>
-                            </li>
-                            <li>
-                                <h5><a href="#"> CURRENT SERIES </a>
-                                    <h5>
-                            </li>
-                            <li>
-                                <h5><a href="#"> THE HOUSE </a>
-                                    <h5>
-                            </li>
-                            <li>
-                                <h5><a href="#"> LOOKING BACK </a>
-                                    <h5>
-                            </li>
-                        </ul>
+                    <div class="col-lg-4  col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h4>Newsletter</h4>
+                            <p>You can trust us. we only send promo offers, not a single spam.</p>
+                            <div class="d-flex flex-row" id="mc_embed_signup">
+                                <form class="navbar-form"
+                                    action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                    method="get" novalidate="true">
+                                    <div class="input-group add-on align-items-center d-flex">
+                                        <input class="form-control" name="EMAIL" placeholder="Your Email address"
+                                            onfocus="if (!window.__cfRLUnblockHandlers) return false; this.placeholder = ''"
+                                            onblur="if (!window.__cfRLUnblockHandlers) return false; this.placeholder = 'Your Email address'"
+                                            required="" type="email">
+                                        <div style="position: absolute; left: -5000px;">
+                                            <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value=""
+                                                type="text">
+                                        </div>
+                                        <div class="input-group-btn">
+                                            <button class="genric-btn">
+                                                <span class="lnr lnr-arrow-right"></span></button>
+                                        </div>
+                                    </div>
+                                    <div class="info mt-20"></div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-
-                    <!--/.row-->
                 </div>
-                <!--/.container-->
             </div>
-            <!--/.footer-->
-
-            <div class="footer-bottom">
-                <div class="container">
-                    <p class="pull-left copyright"> Copyright © Footer 2014. All right reserved. </p>
-
-                </div>
-            </div>
-            <!--/.footer-bottom-->
-
+        </div>
+        <div class="bot">
+            <p>
+                Created with <i class="fa fa-heart"></i> by
+                <a target="_blank" href="index.html">Foodilite</a>
+            </p>
+        </div>
     </footer>
-
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -339,6 +354,9 @@ $email=$_SESSION['email']; //include auth.php file on all secure pages ?>
         }
     </script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
 
     <script>
         ScrollReveal({
@@ -388,6 +406,13 @@ $email=$_SESSION['email']; //include auth.php file on all secure pages ?>
             duration: 200
         });
     </script>
+    <script>
+        $(window).load(function () {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("slow");;
+        });
+    </script>
+
 
 </body>
 
