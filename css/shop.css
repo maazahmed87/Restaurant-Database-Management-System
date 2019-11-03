@@ -16,6 +16,15 @@ body::-webkit-scrollbar
 	width: 6px;
 	background-color: #F5F5F5;
 }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(http://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
+}
 
 body::-webkit-scrollbar-thumb
 {
@@ -23,17 +32,18 @@ body::-webkit-scrollbar-thumb
 }
 
 .right {
-    width: 56%;
+    width: 40%;
     height: 500px;
     min-height: 200px;
     overflow: auto;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 15%;
+    right:0px;
+    position: fixed!important;
+    top: 15%!important;
     background-color: #f9d29d;
     background-image: linear-gradient(315deg, #f9d29d 0%, #ffd8cb 74%);
     border: 2px solid white;
     border-radius: 20px;
+    margin-right:10px;
 }
 
 #shopping-cart {
@@ -72,9 +82,10 @@ body::-webkit-scrollbar-thumb
     border: #d00000 1px solid;
     padding: 5px 10px;
     color: #d00000;
-    float: right;
+    float: left;
     text-decoration: none;
     border-radius: 3px;
+    margin-left: 20px!important;
     margin: 10px 0px;
 }
 
@@ -87,7 +98,7 @@ body::-webkit-scrollbar-thumb
     text-decoration: none;
     border-radius: 3px;
     margin: 10px 0px;
-    margin-right: 200px;
+    margin-right: 30px;
 }
 
 .btnAddAction {

@@ -157,7 +157,7 @@ switch($_GET["action"]) {
         <div id="shopping-cart">
             <div class="txt-heading">Shopping Cart</div>
 
-            <a id="btnEmpty" href="menu.php?action=empty">Empty Cart</a>
+            
 
             <?php
 if(isset($_SESSION["cart_item"])){
@@ -215,7 +215,7 @@ if(isset($_SESSION["cart_item"])){
 
 
             <a id="btnorder" href="menu.php?action=insert&code=<?php echo $item["code"]; ?>">Place order</a>
-            
+            <a id="btnEmpty" href="menu.php?action=empty">Empty Cart</a>
         </div>
     </div>
 </BODY>
