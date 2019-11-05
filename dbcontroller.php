@@ -26,8 +26,6 @@ class DBController {
 	function insq($query)
 	{
 		mysqli_query($this->conn,$query);
-		$done = "Your order has been placed</br>";
-		return $done;
 	}
 	
 	function numRows($query) {

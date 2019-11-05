@@ -39,7 +39,7 @@ switch($_GET["action"]) {
                     $total=($_SESSION["cart_item"][$k]["price"])*($_SESSION["cart_item"][$k]["quantity"]);
                     $ord_date1=date("Y-m-d");
                     $ord_time1=date('H:i');
-                    $db_handle->insq("insert into orders (`email`,`ord_date`,`code`,`quantity`,`ord_time`,`total`) values ('$email1','$ord_date1','$code1','$quantity1','$ord_time1','$total')");    
+                    $done1=$db_handle->insq("insert into orders (`email`,`ord_date`,`code`,`quantity`,`ord_time`,`total`) values ('$email1','$ord_date1','$code1','$quantity1','$ord_time1','$total')");    
                 }
                 
 		unset($_SESSION["cart_item"]);
@@ -73,6 +73,7 @@ switch($_GET["action"]) {
         type="text/css" />
     <meta charset="utf-8">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,700i&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -126,26 +127,29 @@ switch($_GET["action"]) {
 	$product_array = $db_handle->runQuery("SELECT * FROM menu ORDER BY id asc");
 	if (!empty($product_array)) { 
 		foreach($product_array as $key=>$value){
-	?>
-        <div class="product-item foo-2">
-            <form method="post" action="menu.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
-                <div class="product-image"><img
-                        style="height:155px;margin-left:15px;margin-top:10px;border-radius:80px;display:flex;width:160px;background-size:cover;background-position:center center;position:relative;background-repeat:no-repeat;"
-                        src="<?php echo $product_array[$key]["image"]; ?>">
-                </div>
+    ?>
+        <div class="container-fluid" id="prohov">
+            <div class="product-item foo-2">
+                <form method="post" action="menu.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
+                    <div class="product-image"><img
+                            style="height:155px;margin-left:15px;margin-top:10px;border-radius:80px;display:flex;width:160px;background-size:cover;background-position:center center;position:relative;background-repeat:no-repeat;"
+                            src="<?php echo $product_array[$key]["image"]; ?>">
+                    </div>
 
-                <div class="product-tile-footer">
-                    <div class="product-title"><?php echo $product_array[$key]["name"]; ?></div>
-                    <div class="product-description"><?php echo $product_array[$key]["descrip"]; ?></div>
+                    <div class="product-tile-footer">
+                        <div class="product-title"><?php echo $product_array[$key]["name"]; ?></div>
+                        <div class="product-description"><?php echo $product_array[$key]["descrip"]; ?></div>
 
-                </div>
+                    </div>
 
-                <div class="lower">
-                    <div class="cart-action"><input type="text" class="product-quantity fix2" name="quantity" value="1"
-                            size="2" /><input type="submit" value="Add to Cart" class="btnAddAction fix1" /></div>
-                </div>
-                <div class="product-price"><?php echo "$".$product_array[$key]["price"]; ?></div>
-            </form>
+                    <div class="lower">
+                        <div class="cart-action"><input type="text" class="product-quantity fix2" name="quantity"
+                                value="1" size="2" /><input type="submit" value="Add to Cart"
+                                class="btnAddAction fix1" /></div>
+                    </div>
+                    <div class="product-price"><?php echo "$".$product_array[$key]["price"]; ?></div>
+                </form>
+            </div>
         </div>
         <?php
 		}
@@ -157,14 +161,14 @@ switch($_GET["action"]) {
         <div id="shopping-cart">
             <div class="txt-heading">Shopping Cart</div>
 
-            
+
 
             <?php
 if(isset($_SESSION["cart_item"])){
     $total_quantity = 0;
     $total_price = 0;
 ?>
-            <table class="tbl-cart" cellpadding="10" cellspacing="2">
+            <table class="tbl-cart" cellpadding="10" cellspacing="2" style="padding-top:10px;">
                 <tbody>
                     <tr>
                         <th style="text-align:left;" width="30%">Name</th>
@@ -202,6 +206,7 @@ if(isset($_SESSION["cart_item"])){
                             <strong><?php echo "$ ".number_format($total_price, 2); ?></strong>
                         </td>
 
+
                     </tr>
                 </tbody>
             </table>
@@ -214,35 +219,55 @@ if(isset($_SESSION["cart_item"])){
 ?>
 
 
-            <a id="btnorder" href="menu.php?action=insert&code=<?php echo $item["code"]; ?>">Place order</a>
-            <a id="btnEmpty" href="menu.php?action=empty">Empty Cart</a>
+            <a type="button" onclick="myFunction()" id="btnorder"
+                href="menu.php?action=insert&code=<?php echo $item["code"]; ?>">Place order</button>
+                <a id="btnEmpty" href="menu.php?action=empty">Empty Cart</a>
+                <p id="myP" style="visibility: hidden;font-family:'Montserrat';color: #d00000;float:left; text-decoration: none;
+    margin-left: 20px !important;
+    margin: 10px 0px;">Your orders have been placed</p>
+
         </div>
+
     </div>
+
 </BODY>
 <script>
     // GENERAL SETTING
-window.sr = ScrollReveal({ reset: true });
+    window.sr = ScrollReveal({
+        reset: true
+    });
 
-// Custom Settings
-sr.reveal('.foo-1', { duration: 200 });
+    // Custom Settings
+    sr.reveal('.foo-1', {
+        duration: 200
+    });
 
-sr.reveal('.foo-2', { 
-  origin: 'right', 
-  duration: 500 
-});
+    sr.reveal('.foo-2', {
+        origin: 'right',
+        duration: 500
+    });
 
-sr.reveal('.foo-3', { 
-  rotate: { x: 100, y: 100, z: 0 },
-  duration: 1000
-});
+    sr.reveal('.foo-3', {
+        rotate: {
+            x: 100,
+            y: 100,
+            z: 0
+        },
+        duration: 1000
+    });
 
-sr.reveal('.foo-4', { 
-  viewFactor: 0.3
-});
+    sr.reveal('.foo-4', {
+        viewFactor: 0.3
+    });
 
-sr.reveal('.foo-5', { 
-  duration: 200 
-});
+    sr.reveal('.foo-5', {
+        duration: 200
+    });
+</script>
+<script>
+    function myFunction() {
+        document.getElementById("myP").style.visibility = "visible";
+    }
 </script>
 
 </HTML>

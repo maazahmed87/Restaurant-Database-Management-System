@@ -1,34 +1,33 @@
 body {
-    font-family: Arial;
+    font-family: Rubik;
     color: #211a1a;
     font-size: 0.9em;
     display: flex;
     padding-right: 20px;
 }
-body::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
 }
 
-body::-webkit-scrollbar
-{
-	width: 6px;
-	background-color: #F5F5F5;
+body::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
 }
+
 .se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(http://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(http://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
 }
 
-body::-webkit-scrollbar-thumb
-{
-	background-color: #000000;
+body::-webkit-scrollbar-thumb {
+    background-color: #000000;
 }
 
 .right {
@@ -36,14 +35,14 @@ body::-webkit-scrollbar-thumb
     height: 500px;
     min-height: 200px;
     overflow: auto;
-    right:0px;
-    position: fixed!important;
-    top: 15%!important;
+    right: 0px;
+    position: fixed !important;
+    top: 15% !important;
     background-color: #f9d29d;
     background-image: linear-gradient(315deg, #f9d29d 0%, #ffd8cb 74%);
     border: 2px solid white;
     border-radius: 20px;
-    margin-right:10px;
+    margin-right: 10px;
 }
 
 #shopping-cart {
@@ -69,12 +68,13 @@ body::-webkit-scrollbar-thumb
 
 .txt-heading {
     color: black;
-    border-bottom: 1px solid #E0E0E0;
+    border-bottom: 1px solid #505962;
     overflow: auto;
     font-family: "AbolitionW00-Regular";
     text-transform: capitalize;
     font-size: 40px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 #btnEmpty {
@@ -85,7 +85,7 @@ body::-webkit-scrollbar-thumb
     float: left;
     text-decoration: none;
     border-radius: 3px;
-    margin-left: 20px!important;
+    margin-left: 20px !important;
     margin: 10px 0px;
 }
 
@@ -170,6 +170,7 @@ body::-webkit-scrollbar-thumb
     font-family: 'Beyond the mountains';
     font-weight: bolder;
 }
+
 
 .lower {
     margin-top: 30px !important;

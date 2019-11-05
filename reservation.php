@@ -79,7 +79,7 @@ $status = "Your reservation has been booked</br>";
     </nav>
 
     <section id="section03" class="demo">
-        <h1 style="font-family:'Sugar Candy';font-weight:bolder;font-size:85px;padding-top:40px;">Make Reservations</h1>
+        <h1 style="font-family:'Sugar Candy';font-weight:bolder!important;font-size:95px;padding-top:40px;">Make Reservations</h1>
         <a href="#reservation"><span></span></a>
     </section>
 

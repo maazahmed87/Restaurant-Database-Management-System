@@ -256,13 +256,13 @@ $email=$_SESSION['email']; //include auth.php file on all secure pages ?>
                             <h4>Opening Hours</h4>
                             <ul class="hr-list">
                                 <li class="d-flex justify-content-between">
-                                    <span>Monday - Friday</span> <span>08.00 am - 10.00 pm</span>
+                                    <span>Monday - Thursday</span> <span>12:00 pm - 11:00 pm</span>
                                 </li>
                                 <li class="d-flex justify-content-between">
-                                    <span>Saturday</span> <span>08.00 am - 10.00 pm</span>
+                                    <span>Saturday</span> <span>12:00 pm - 12:00 am</span>
                                 </li>
                                 <li class="d-flex justify-content-between">
-                                    <span>Sunday</span> <span>08.00 am - 10.00 pm</span>
+                                    <span>Sunday</span> <span>6:00 pm - 12:00 pm</span>
                                 </li>
                             </ul>
                         </div>
@@ -271,7 +271,7 @@ $email=$_SESSION['email']; //include auth.php file on all secure pages ?>
                         <div class="single-footer-widget">
                             <h4>Contact Us</h4>
                             <p>
-                                56/8, los angeles, rochy beach, Santa monica, United states of america - 1205
+                                2nd Cross, MG road, Kodialbail, DK, Karnataka India - 575003
                             </p>
                             <p class="number">
                                 012-6532-568-9746 <br>
