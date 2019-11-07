@@ -244,7 +244,7 @@ if(isset($_SESSION["cart_item"])){
 
     sr.reveal('.foo-2', {
         origin: 'right',
-        duration: 500
+        duration: 200
     });
 
     sr.reveal('.foo-3', {
