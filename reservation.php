@@ -22,7 +22,7 @@ $status = "Your reservation has been booked</br>";
 
 <head>
     <meta charset="utf-8">
-    <title>Foodilite|Reservation</title>
+    <title>Foodilite | Reservation</title>
     <link href="//db.onlinewebfonts.com/c/465b1cbe35b5ca0de556720c955abece?family=AbolitionW00-Regular" rel="stylesheet"
         type="text/css" />
     <meta charset="utf-8">
