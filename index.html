@@ -51,16 +51,8 @@ $email=$_SESSION['email']; //include auth.php file on all secure pages ?>
                         <a class="nav-link" href="reservation.php">reservation</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="logout.php">logout</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="user.php">
-                            <p><?php
-            $query1="select name from customer where email='$email'";
-            $nameg = mysqli_query($con,$query1);
-            while ($row = mysqli_fetch_assoc($nameg)) {
-                echo $row['name']."<br>";
-            }?></p>
+                        <a class="nav-link" href="login.php">
+                            <p>Login</p>
                         </a>
                     </li>
                 </ul>
