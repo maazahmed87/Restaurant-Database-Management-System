@@ -1,6 +1,6 @@
 # Restaurant-Database-Management-System
 
-This is a simple restaurant management system done as a project for the course Relational Database Management System. The tech stack here is basic HTML for frontend, PHP for scripting and MySQL is used for relational database management.
+This is a simple restaurant management system built for small and medium sized restaurants. The tech stack here is HTML for frontend, PHP for scripting and middleware and MySQL is used for relational database management.
 
 ## Languages and Technologies
 
